@@ -1,0 +1,19 @@
+# .NET items
+*.csproj.user
+*.suo
+*.sln
+obj/
+bin/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+_ReSharper*/
+*.DotSettings.user
+
+# Angular items
+/node_modules
+/dist
+/e2e
+.angular
+.ng-openapi-gen
+.DS_Store

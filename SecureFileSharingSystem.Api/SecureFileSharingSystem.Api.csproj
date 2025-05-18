@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SecureFileSharingSystem.Application\SecureFileSharingSystem.Application.csproj" />
+    <ProjectReference Include="..\SecureFileSharingSystem.Domain\SecureFileSharingSystem.Domain.csproj" />
+    <ProjectReference Include="..\SecureFileSharingSystem.Infrastructure\SecureFileSharingSystem.Infrastructure.csproj" />
+    <ProjectReference Include="..\SecureFileSharingSystem.Persistence\SecureFileSharingSystem.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
