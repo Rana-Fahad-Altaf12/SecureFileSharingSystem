@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <div class="card shadow p-4" style="max-width: 500px; margin: auto;">
+      <h3 class="mb-4 text-center">Download File via API Key</h3>
+      <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+  
+      <div class="mb-3">
+        <label for="fileId" class="form-label">File ID</label>
+        <input [(ngModel)]="fileId" id="fileId" class="form-control" placeholder="Enter File ID" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="apiKey" class="form-label">API Key</label>
+        <input [(ngModel)]="apiKey" id="apiKey" class="form-control" placeholder="Enter API Key" />
+      </div>
+  
+      <button (click)="downloadWithApiKey()" class="btn btn-primary w-100 mb-3" [disabled]="loading">
+        <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>
+        Download
+      </button>
+  
+      <button routerLink="/login" class="btn btn-outline-secondary w-100">Back to Login</button>
+    </div>
+  </div>  

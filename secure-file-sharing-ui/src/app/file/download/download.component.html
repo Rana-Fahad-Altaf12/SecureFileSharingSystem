@@ -1,0 +1,9 @@
+<h3>Download File</h3>
+<div *ngIf="message" class="alert alert-warning">{{ message }}</div>
+
+<div class="mb-3">
+  <label>File ID</label>
+  <input [(ngModel)]="fileId" class="form-control" placeholder="Enter File ID" />
+</div>
+
+<button (click)="download()" class="btn btn-primary">Download</button>

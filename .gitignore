@@ -11,9 +11,7 @@ _ReSharper*/
 *.DotSettings.user
 
 # Angular items
-/node_modules
-/dist
-/e2e
-.angular
-.ng-openapi-gen
-.DS_Store
+/secure-file-sharing-ui/node_modules/
+/secure-file-sharing-ui/dist/
+/secure-file-sharing-ui/.angular/
+/secure-file-sharing-ui/.DS_Store
